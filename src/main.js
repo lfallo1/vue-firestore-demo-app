@@ -1,7 +1,22 @@
 import Vue from 'vue'
-import App from './App.vue'
+
+//font awesome
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faPlus, faHome } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+//store / vuex / main app
 import router from './router'
 import store from './store'
+import App from './App.vue'
+
+/* End imports */
+/* ----------- */
+
+
+//font-awesome config
+library.add(faPlus, faHome)
+Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.config.productionTip = false
 
