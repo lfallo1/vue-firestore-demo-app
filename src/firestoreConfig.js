@@ -16,6 +16,7 @@ var firebaseApp = Firebase.initializeApp({
 
 const firestore = firebaseApp.firestore();
 
+//per firestore warning in console, this line is needed to shut the warning up
 const settings = {/* your settings... */ timestampsInSnapshots: true};
 firestore.settings(settings);
 

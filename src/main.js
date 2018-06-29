@@ -11,7 +11,6 @@ import store from './store'
 import App from './App.vue'
 
 /* End imports */
-/* ----------- */
 
 
 //font-awesome config
